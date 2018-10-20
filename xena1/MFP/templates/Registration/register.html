@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Login Page</title>
+   <!--Made with love by Mutiullah Samim -->
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="{% static 'style2.css' %}">
+</head>
+<body>
+        <div class="container">
+        <div class="row">
+            {% if registered %}
+                <h1>  thankyou for registering</h1>
+            {% else %}
+            <div class="login-sec container">
+                <h2 class="text-center">Register</h2>
+        <form class="login-form" enctype="multipart/form-data" method="post">
+            {% csrf_token %}
+            <div class="form-group" >
+                    {{ user_form.as_p }}
+                    {{ profile_form.as_p }}
+                <!-- <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+                <input type="text" class="form-control hvr-rectangle-out" placeholder="" required>
+                
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+                <input type="password" class="form-control hvr-rectangle-out" placeholder="" required> -->
+            </div>
+            
+            
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    <small>Remember Me</small>
+                    </label>
+                    <button type="submit" class="btn btn-login float-right">Submit</button>
+                </div>
+            
+        </form>
+    
+            </div>
+            {% endif %}
+            
+        </div>
+    </div>
+    
+</body>
+</html>

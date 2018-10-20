@@ -7,20 +7,33 @@
     width: 100%;
 
 }
+.font2{
+    font-weight: bold;
+    font-style: italic;
+}
+.size1{
+    height: 200px;
+    width: 200px;
+}
 .edit-8{
-    color: white !important;
+   padding-top: 200px !important;
 }
 .edit-7{
     color: white !important;
     background-color: #5bc0de !important;
     border-color: #46b8da !important;
     width: 30%;
+    height: 30px !important;
 }
 .img1{
     height: 220px;
     width: 220px;
     margin: 3px;
     border-radius: 50%;
+}
+.font1{
+    color: black !important;
+    font-weight: bold;
 }
 
 p{
@@ -47,7 +60,7 @@ h2{
   z-index: -1 !important;
 }
 #apply{
-       background: url("https://qph.fs.quoracdn.net/main-qimg-b09ed8ad9eb093e07d279e64b2814712-c");
+       background: url("http://www.dsgroups.org/img/sub-page-images-24.jpg");
       background-repeat: no-repeat;
 background-position: center;
 background-size: cover; 

@@ -1,9 +1,5 @@
-
-
-
-
 <!DOCTYPE html>
-{% load staticfiles%}
+{% load staticfiles%} 
 <html lang="en">
 
 <head>
@@ -25,11 +21,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="{% static 'css/styles1.css' %}" rel="stylesheet">
-
+    
+    <link href="{% static 'css/index_css.css' %}" rel="stylesheet">
+    <link href="{% static 'css/hover.css' %}" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -38,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!-- Resource style -->
     <!-- Modernizr -->
 
@@ -69,7 +66,7 @@
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-          <div id="particles-js"></div>
+         <!-- <div id="particles-js"></div>-->
 <!--<script type="text/javascript" src="js/particles.js"></script> 
 <script type="text/javascript" src="js/app.js"></script> -->
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -107,13 +104,16 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="edit-8">
+
         <div class="container">
+         
             <div class="row">
+ <div id="particles-js"></div>
                 <div class="col-lg-12">
-                    <img class="img-responsive" id="profile" src="{% static 'images/google.png' %}" alt="">
+                    <img class="img-responsive" id="profile" src="{% static 'images/download.png' %}" alt="">
                     <div class="intro-text">
-                      <span class="name">XENA<img src="{% static 'images/circle.png' %}" float= "left">AI </span>
+                    
                     <!--     <div class="sponsors"><span>- Presented by <em><b>GDG Allahabad</b></em> and <em><b>Geekhaven</b></em></span></div>
                        -->
                         <br />
@@ -149,7 +149,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2 id=edit-4>About</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -161,11 +161,15 @@
                 <div class="col-lg-4">
                     <p>The idea is to provide you with facilities like comparisons of various types of data using graphs, periodic reports and an interactive user interface to collect user feedback. We help you find the last missing piece of your puzzle:)
 </p>
+<br>
+<br>
+<br>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <!-- Large modal -->
                     <div class="text-center">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Freqently Asked Questions</button>
+                        <button type="button" class="btn btn-info btn-lg edit-2" data-toggle="modal" data-target=".bs-example-modal-lg">Freqently Asked Questions</button>
+                        
 
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                             <div class="modal-dialog modal-lg" role="document">
@@ -296,19 +300,25 @@
     </section> -->
 
     <section id="apply" >
-
-         <h2>IIIT-Allahabad Mess Feedback</h2>
+         <h2 >IIIT-Allahabad Mess Feedback</h2> 
+<hr width="50%">
+ <br>
+            <br>
        <!-- <h2>IIIT-Allahabad Mess Feedback</h2>-->
         <div style="text-align: center;">
-          <!--  <a href="https://docs.google.com/a/iiita.ac.in/forms/d/e/1FAIpQLSc1-5KJSpic7E4xz_Yn0Lh8H8Foc_BzGYPAL-JIHmryWLvV8g/viewform">
-                <button type="button" class="btn btn-info"> Undergrad freshman, Click Here <i class="fa fa-external-link" aria-hidden="true"></i></button>
-            </a>
-            <br />
-            <br />
-            <a href="https://docs.google.com/a/iiita.ac.in/forms/d/e/1FAIpQLSeGwRQefdZX4j0Rg3qIUTrt8Wf3XydQaOrAXi3eJps0H_jNJg/viewform">
+
+
+        
+            <a class ="edit-8" href="{% url 'user_login' %}"><button type="button" class=" edit-7" ><b>Login Portal</b></button></a>
+                
+            
+          
+           
+          <!--  <a href="https://docs.google.com/a/iiita.ac.in/forms/d/e/1FAIpQLSeGwRQefdZX4j0Rg3qIUTrt8Wf3XydQaOrAXi3eJps0H_jNJg/viewform">
                 <button type="button" class="btn btn-info"> Rest, Click here<i class="fa fa-external-link" aria-hidden="true"></i> or fill below </button>
             </a>-->
-<hr width="50%">
+
+
         </div>
         
         <!--<div class="container form_google">
@@ -328,8 +338,37 @@
             <div class="clearfix"></div>
 
             <br />
+<div class="container">
+<div class="row">
+  <!--  <div class="col-md-3 ">
+  <img  src="img/sample.jpg" alt="Avatar" class="image contact" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>-->
 
-            <ul class="thumbnails gallery">
+
+      <div class="col-md-3"><img class="edit-4 img1" src="{% static 'images/sample.jpg' %}" class="contact"></div>
+      <div class="col-md-3"><img class="edit-4 img1" src="{% static 'images/sample.jpg' %}" class="contact"></div>
+      <div class="col-md-3"><img class="edit-4 img1" src="{% static 'images/sample.jpg' %}" class="contact"></div>
+      <div class="col-md-3"><img class="edit-4 img1" src="{% static 'images/sample.jpg' %}" class="contact"></div>
+      <!-- <img src="img/IMG_0057.jpg">
+      <img src="img/IMG_0057.jpg"> -->
+    </div>
+    <div class="row edit-2"> 
+        <div class="col-md-3 "><p class="contact ">Arsh Panghal</p><p align="center"><a href="https://www.facebook.com/abhishek.deora.5"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                             <a href="https://github.com/adeora7"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p></div>
+      <div class="col-md-3"><p class="contact">Muskan Chugh</p><p align="center"><a href="https://www.facebook.com/abhishek.deora.5"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                             <a href="https://github.com/adeora7"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p></div>
+      <div class="col-md-3"><p class="contact">Dhairya Baweja</p><p align="center"><a href="https://www.facebook.com/abhishek.deora.5"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                             <a href="https://github.com/adeora7"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p></div>
+      <div class="col-md-3"><p class="contact">Mohit Dhillon</p><p align="center"><a href="https://www.facebook.com/abhishek.deora.5"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                             <a href="https://github.com/adeora7"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p></div>
+
+    </div>
+  </div>
+</div>
+            <!-- <ul class="thumbnails gallery">
                 <li class="span3 clearfix" data-tag='organisers'>
                     <div class="thumbnail">
                         <div class="caption edit-2">
@@ -372,18 +411,19 @@
                 </li>
 
                 
-            </ul>
+            </ul> -->
             <div class="push"></div>
         </div>
     </section>
 
     <!-- Footer -->
+  
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
 
-                    <div class="footer-col col-md-6">
+                    <div class="footer-col">
                         <ul class="list-inline">
                             
                             <li>
@@ -391,9 +431,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <div class="fb-like" data-href="https://geekhaven.iiita.ac.in/iiitahacks/" data-width="250" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-                    </div>
+                   
                 </div>
             </div>
         </div>

@@ -1,8 +1,53 @@
-h2{
+.about{
+    background-color: blue;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.edit-8{
     color: white !important;
 }
+.edit-7{
+    color: white !important;
+    background-color: #5bc0de !important;
+    border-color: #46b8da !important;
+    width: 30%;
+}
+.img1{
+    height: 220px;
+    width: 220px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+p{
+    font-family: 'Cinzel', serif !important;
+}
+#edit-4{
+color: black !important;
+}
+h2{
+    color: white !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.contact{
+    width: 100%;
+    margin: 0px;
+    padding-right: 0px;
+    text-align: center;
+    position: relative !important;
+    font-family: 'Cinzel', serif !important;
+}
+.edit-6{
+  position:relative !important;  
+  z-index: -1 !important;
+}
 #apply{
-       background: url("/img/collegemess.jpg");
+       background: url("https://qph.fs.quoracdn.net/main-qimg-b09ed8ad9eb093e07d279e64b2814712-c");
       background-repeat: no-repeat;
 background-position: center;
 background-size: cover; 
@@ -11,7 +56,7 @@ background-size: cover;
  border-radius: 3px 3px 3px 3px;
 }
 .edit-2{
-  position: relative;  
+  position:relative;  
   z-index: 9999;
 }
 #particles-js canvas {
@@ -25,38 +70,20 @@ background-size: cover;
     transition: opacity .8s ease, transform 1.4s ease;
        
 }
-@-webkit-keyframes hvr-ripple-out {
-  100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
-    opacity: 0;
-  }
-}
-.hvr-grow {
-  display: inline-block !important;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0) !important;
-  transform: perspective(1px) translateZ(0) !important;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
+
 #particles-js {
     
 display: block;
     width: 100%;
     height: 100%;
-    position: fixed;
-    z-index: -1;
+    position: absolute !important;
+    z-index: 9999;
     top: 0;
     left: 0
 }
 body {
     font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cinzel', serif !important;
     /*overflow: hidden;
     position: absolute;
     z-index: -1;*/
@@ -220,7 +247,7 @@ header img {
     margin: 0 auto 20px;
 }
 header .intro-text .name {
-    font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Cinzel', serif;
     font-weight: 150;
     font-size: 2em;
 }
@@ -245,7 +272,7 @@ header .intro-text .typed {
 }
 .navbar-custom {
     background: #2C3E50;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cinzel', serif !important;
     text-transform: uppercase;
     font-weight: 700;
     border: none;

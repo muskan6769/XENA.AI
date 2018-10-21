@@ -25,6 +25,7 @@ data = []
 isBgCaptured = 0   # bool, whether the background captured
 triggerSwitch = False  # if true, keyborad simulator works
 setFlag = False
+counter=3
 
 def printThreshold(thr):
     print("! Changed threshold to "+str(thr))
@@ -189,6 +190,7 @@ while camera.isOpened():
         supplyListAndTime('dinner',str(datetime.datetime.now())[0:10])
         data=[]
     if len(data) == 5:
-        supplyListAndTime('lunch','dekh')
+        supplyListAndTime('lunch','date'+str(counter))
+        counter+=1
 
 

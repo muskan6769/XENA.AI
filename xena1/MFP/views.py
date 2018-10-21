@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render
+from django.urls import reverse
 from django.views.generic import TemplateView
 from MFP.forms import UserForm,UserProfileInfo
 from django.contrib.auth import logout
@@ -58,7 +59,7 @@ def register(request):
         user_form = UserForm()
         profile_form = UserProfileInfo()
 
-        return render(request,'register.html',
+    return render(request,'register.html',
                             {'registered':registered,
                             'user_form':user_form,
                             'profile_form':profile_form})
@@ -73,13 +74,18 @@ def user_login(request):
         if user:
             if user.is_active:
                 dj_login(request,user)
-                return HttpResponseRedirect(reverse('index'))
+                return HttpResponseRedirect(reverse('index_mess'))
 
             else:
                 return HttpResponse("acoount not active!")
         else:
             print("someone tried to login and failed!")
-            print("Username: {} and password {}").format(username,password)
+            #print("Username: {} and password {}").format(username,password)
             return HttpResponse("invalid login details supplied!")
     else:
         return render(request,'login.html',{})
+
+
+def mess_service(request):
+    return render(request,'index_mess.html')
+

@@ -32,9 +32,14 @@
     margin: 3px;
     border-radius: 50%;
 }
+.edit22{
+    font-size: 25px !important;
+    margin-right: 3px;
+    font-family: 'Libre Franklin', sans-serif !important;
+}
 
 .font1{
-    color: rgba(187, 165, 119, 0) !important;
+    color: rgb(0, 0, 0) !important;
     font-weight: bold;
 
 }
